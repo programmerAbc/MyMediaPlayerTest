@@ -1,107 +1,205 @@
 <resources>
-    <string name="app_name">MyMediaPlayerTest</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="menu_view">View Mode</string>
-    <string name="menu_network_stream">Stream</string>
-    <string name="menu_select">Select</string>
-    <string name="menu_setting">Setting</string>
-    <string name="menu_help">Help</string>
-    <string name="action_refresh">Refresh</string>
-    <string name="action_search">Search</string>
-    <string name="action_search_hint">Search Media Files</string>
-    <string name="pref_cat_appearance">Appearance</string>
-    <string name="pref_cat_scan">Scan</string>
-    <string name="pref_cat_interface">Interface</string>
-    <string name="pref_cat_playback">Playback</string>
-    <string name="pref_cat_background_play">Background Play</string>
-    <string name="pref_cat_miscellaneous">Miscellaneous</string>
-    <string name="pref_cat_hw_decoder">Hardware Decoder</string>
-    <string name="pref_cat_sw_decoder">Software Decoder</string>
-    <string name="pref_cat_general">General</string>
-    <string name="pref_cat_text_processing">Text Processing</string>
-    <string name="pref_cat_edit">Edit</string>
-    <string name="pref_cat_user_data">User Data</string>
-    <string name="pref_header_list">List</string>
-    <string name="pref_header_player">Player</string>
-    <string name="pref_header_decoder">Decoder</string>
-    <string name="pref_header_audio">Audio</string>
-    <string name="pref_header_subtitle">Subtitle</string>
-    <string name="pref_header_general">General</string>
-    <string name="pref_appearance_theme">Theme</string>
-    <string name="pref_appearance_last_media">Last media in each folders</string>
-    <string name="pref_appearance_last_media_summary">Mark last played media in each folders.</string>
-    <string name="pref_appearance_scroll_down">Scroll down to last media</string>
-    <string name="pref_appearance_scroll_down_summary">Auto-scroll to position of the last played media.</string>
-    <string name="pref_appearance_select_thumbnail">Select thumbnail</string>
-    <string name="pref_appearance_select_thumbnail_summary">Switch to selection mode by touching the thumbnail or icon.</string>
-    <string name="pref_appearance_floating_button">Floating button</string>
-    <string name="pref_appearance_floating_button_summary">Place a floating button on the bottom right corner of the screen to start last played media.</string>
-    <string name="pref_appearance_period_tagged">Period tagged as "NEW"</string>
-    <string name="pref_appearance_period_tagged_summary">"NEW" tag will be displayed if the file was copied within this period.</string>
-    <string name="pref_scan_folders">Folders</string>
-    <string name="pref_scan_folders_summary">Select folders to be included in the media library</string>
-    <string name="pref_scan_file_extensions">File extensions</string>
-    <string name="pref_scan_file_extensions_summary">Select file extensions for folder scanning.It is possible to configure decoders per extension types.</string>
-    <string name="pref_scan_show_hidden">Show hidden files and folders</string>
-    <string name="pref_scan_show_hidden_summary">Show hidden folders and file starting with ".".</string>
-    <string name="pref_interface_theme">Theme</string>
-    <string name="pref_interface_style">Style</string>
-    <string name="pref_interface_screen">Screen</string>
-    <string name="pref_interface_screen_summary">Screen settings:orientation,full screen,brightness,etc</string>
-    <string name="pref_interface_controls">Controls</string>
-    <string name="pref_interface_controls_summary">Input controls:Touch action,gestures,lock mode,etc.</string>
-    <string name="pref_interface_navigation">Navigation</string>
-    <string name="pref_interface_navigation_summary">Navigation settings:seeking settings,forward/backward buttons,etc.</string>
-    <string name="pref_interface_double_tap">Double-tap the back button</string>
-    <string name="pref_interface_double_tap_summary">Press the back button twice to close the playback screen.</string>
-    <string name="pref_interface_quick_zoom">Quick Zoom</string>
-    <string name="pref_interface_quick_zoom_summary">Skip zoom steps between 100% and 'fit to screen'(150%,200%,etc.).</string>
-    <string name="pref_playback_resume">Resume</string>
-    <string name="pref_playback_resume_summary">Select whether to resume from the point where you stopped.</string>
-    <string name="pref_playback_resume_only">Resume only the first file</string>
-    <string name="pref_playback_resume_only_summary">Apply resume setting only on the first file. Next files will start from the beginning.</string>
-    <string name="pref_playback_default_playback_speed">Default playback speed</string>
-    <string name="pref_playback_remember_selections">Remember selections</string>
-    <string name="pref_playback_remember_selections_summary">Remember selections for each files such as choice of audio track, subtitle track,decoder...</string>
-    <string name="pref_playback_back_to_list">Back to list</string>
-    <string name="pref_playback_back_to_list_summary">Return to the list after playback is completed.</string>
-    <string name="pref_playback_preview_while_seeking">Preview while seeking</string>
-    <string name="pref_playback_preview_while_seeking_summary">Display preview image while changing playback position.</string>
-    <string name="pref_playback_preview_while_seeking_network">Preview while seeking(network)</string>
-    <string name="pref_playback_preview_while_seeking_network_summary">Display preview image for network play.</string>
-    <string name="pref_playback_fast_seeking">Fast seking</string>
-    <string name="pref_playback_fast_seeking_summary">Seek to the nearest keyframe position instead of exact position. This setting applies to HW+ and SW decoders.</string>
-    <string name="pref_playback_play_alone">Play alone</string>
-    <string name="pref_playback_play_alone_summary">Stop other players while playing back videos or audios. It also makes MX Player stopped id other players begin to play or you make a phone call.</string>
-    <string name="pref_playback_media_buttons">Media buttons</string>
-    <string name="pref_playback_media_buttons_summary">Respong to media control buttons from headset,bluetooth,etc.</string>
-    <string name="pref_playback_next_prev">Next/Prev to FF/Rew</string>
-    <string name="pref_playback_next_prev_summary">Treat Next/Prev media buttons as FF/Rew btton.</string>
-    <string name="pref_playback_toggle_playback">Toggle playback with play button</string>
-    <string name="pref_playback_toggle_playback_summary">Toggle playback in response to 'play' media button. This option is useful only for devices having trouble in the play button.</string>
-    <string name="pref_playback_smart_previous">Smart previous button</string>
-    <string name="pref_playback_smart_previous_summary">If you select 'previous' button, it will resume again from the beginning or open the previous file depending upon the current play back position.</string>
-    <string name="pref_bg_play_background_play">Background play</string>
-    <string name="pref_bg_play_background_play_summary">Audio playback will be continued in the background even after screen closed.</string>
-    <string name="pref_bg_play_background_play_audio">Background play(audio)</string>
-    <string name="pref_bg_play_background_play_audio_summary">Background playback will be applied for audio playback.</string>
-    <string name="pref_miscellaneous_video_resizing">Video resizing delay</string>
-    <string name="pref_miscellaneous_video_resizing_summary">Set delay time to resize HW decoded video screen. Use higher values if screen flickers severely or fresszes.</string>
-    <string name="pref_miscellaneous_limit_video">Limit video resizing</string>
-    <string name="pref_miscellaneous_limit_video_summary">Do nt enhance video size if it exceeds its display size.(HW decoder only)</string>
-    <string name="pref_miscellaneous_turnoff_button_backlight">Turn off button backlight</string>
-    <string name="pref_miscellaneous_turnoff_button_backlight_summary">Turn off main buttons' backlight during playback.(Please uncheck this option manually if this does not turn off backlight automatically. The device not turn off backlight automatically. The device might need to be rebooted iin some cases.)</string>
-    <string name="pref_miscellaneous_loading_circle">Loading circle animation</string>
-    <string name="pref_miscellaneous_software_navigation">Software navigation buttons</string>
-    <string name="pref_miscellaneous_software_navigation_summary">This device has software navigation buttons.(back,home,menu,etc.) Check this option if buttons are not hidden automatically.</string>
-    <string name="pref_miscellaneous_sceen_lock">Screen lock</string>
-    <string name="pref_miscellaneous_sceen_lock_summary">Try other mode if default screen lock does not work.</string>
-    <string name="pref_miscellaneous_android4_compat">Android 4.0 compatible mode</string>
-    <string name="pref_miscellaneous_android4_compat_summary">Use this mode if you have issues with screen layout.</string>
-    <string name="pref_hw_decoder_use_hwplus">Use HW+ decoder</string>
-    <string name="pref_hw_decoder_hwplus_decoder_local">HW+ decoder (local)</string>
-    <string name="pref_hw_decoder_hwplus_decoder_local_summary">Set HW+ decoder as default for playing videos stored on local files.</string>
-    <string name="pref_hw_decoder_hwplus_decoder_network">HW+ decoder (network)</string>
-
-
+    <string formatted = "false" name="app_name">MyMediaPlayerTest</string>
+    <string formatted = "false" name="title_activity_main">MainActivity</string>
+    <string formatted = "false" name="menu_view">View Mode</string>
+    <string formatted = "false" name="menu_network_stream">Stream</string>
+    <string formatted = "false" name="menu_select">Select</string>
+    <string formatted = "false" name="menu_setting">Setting</string>
+    <string formatted = "false" name="menu_help">Help</string>
+    <string formatted = "false" name="action_refresh">Refresh</string>
+    <string formatted = "false" name="action_search">Search</string>
+    <string formatted = "false" name="action_search_hint">Search Media Files</string>
+    <string formatted = "false" name="pref_cat_appearance">Appearance</string>
+    <string formatted = "false" name="pref_cat_scan">Scan</string>
+    <string formatted = "false" name="pref_cat_interface">Interface</string>
+    <string formatted = "false" name="pref_cat_playback">Playback</string>
+    <string formatted = "false" name="pref_cat_background_play">Background Play</string>
+    <string formatted = "false" name="pref_cat_miscellaneous">Miscellaneous</string>
+    <string formatted = "false" name="pref_cat_hw_decoder">Hardware Decoder</string>
+    <string formatted = "false" name="pref_cat_sw_decoder">Software Decoder</string>
+    <string formatted = "false" name="pref_cat_general">General</string>
+    <string formatted = "false" name="pref_cat_text_processing">Text Processing</string>
+    <string formatted = "false" name="pref_cat_edit">Edit</string>
+    <string formatted = "false" name="pref_cat_user_data">User Data</string>
+    <string formatted = "false" name="pref_header_list">List</string>
+    <string formatted = "false" name="pref_header_player">Player</string>
+    <string formatted = "false" name="pref_header_decoder">Decoder</string>
+    <string formatted = "false" name="pref_header_audio">Audio</string>
+    <string formatted = "false" name="pref_header_subtitle">Subtitle</string>
+    <string formatted = "false" name="pref_header_general">General</string>
+    <string formatted = "false" name="pref_appearance_theme">Theme</string>
+    <string formatted = "false" name="pref_appearance_last_media">Last media in each folders</string>
+    <string formatted = "false" name="pref_appearance_last_media_summary">Mark last played media in each folders.</string>
+    <string formatted = "false" name="pref_appearance_scroll_down">Scroll down to last media</string>
+    <string formatted = "false" name="pref_appearance_scroll_down_summary">Auto-scroll to position of the last played media.</string>
+    <string formatted = "false" name="pref_appearance_select_thumbnail">Select thumbnail</string>
+    <string formatted = "false" name="pref_appearance_select_thumbnail_summary">Switch to selection mode by touching the thumbnail or icon.</string>
+    <string formatted = "false" name="pref_appearance_floating_button">Floating button</string>
+    <string formatted = "false" name="pref_appearance_floating_button_summary">Place a floating button on the bottom right corner of the screen to start last played media.</string>
+    <string formatted = "false" name="pref_appearance_period_tagged">Period tagged as \&#x22;NEW\&#x22;</string>
+    <string formatted = "false" name="pref_appearance_period_tagged_summary">\&#x22;NEW\&#x22; tag will be displayed if the file was copied within this period.</string>
+    <string formatted = "false" name="pref_scan_folders">Folders</string>
+    <string formatted = "false" name="pref_scan_folders_summary">Select folders to be included in the media library</string>
+    <string formatted = "false" name="pref_scan_file_extensions">File extensions</string>
+    <string formatted = "false" name="pref_scan_file_extensions_summary">Select file extensions for folder scanning.It is possible to configure decoders per extension types.</string>
+    <string formatted = "false" name="pref_scan_show_hidden">Show hidden files and folders</string>
+    <string formatted = "false" name="pref_scan_show_hidden_summary">Show hidden folders and file starting with \&#x22;.\&#x22;.</string>
+    <string formatted = "false" name="pref_interface_theme">Theme</string>
+    <string formatted = "false" name="pref_interface_style">Style</string>
+    <string formatted = "false" name="pref_interface_screen">Screen</string>
+    <string formatted = "false" name="pref_interface_screen_summary">Screen settings:orientation,full screen,brightness,etc</string>
+    <string formatted = "false" name="pref_interface_controls">Controls</string>
+    <string formatted = "false" name="pref_interface_controls_summary">Input controls:Touch action,gestures,lock mode,etc.</string>
+    <string formatted = "false" name="pref_interface_navigation">Navigation</string>
+    <string formatted = "false" name="pref_interface_navigation_summary">Navigation settings:seeking settings,forward/backward buttons,etc.</string>
+    <string formatted = "false" name="pref_interface_double_tap">Double-tap the back button</string>
+    <string formatted = "false" name="pref_interface_double_tap_summary">Press the back button twice to close the playback screen.</string>
+    <string formatted = "false" name="pref_interface_quick_zoom">Quick Zoom</string>
+    <string formatted = "false" name="pref_interface_quick_zoom_summary">Skip zoom steps between 100% and \&#x27;fit to screen\&#x27;(150%,200%,etc.).</string>
+    <string formatted = "false" name="pref_playback_resume">Resume</string>
+    <string formatted = "false" name="pref_playback_resume_summary">Select whether to resume from the point where you stopped.</string>
+    <string formatted = "false" name="pref_playback_resume_only">Resume only the first file</string>
+    <string formatted = "false" name="pref_playback_resume_only_summary">Apply resume setting only on the first file. Next files will start from the beginning.</string>
+    <string formatted = "false" name="pref_playback_default_playback_speed">Default playback speed</string>
+    <string formatted = "false" name="pref_playback_remember_selections">Remember selections</string>
+    <string formatted = "false" name="pref_playback_remember_selections_summary">Remember selections for each files such as choice of audio track, subtitle track,decoder...</string>
+    <string formatted = "false" name="pref_playback_back_to_list">Back to list</string>
+    <string formatted = "false" name="pref_playback_back_to_list_summary">Return to the list after playback is completed.</string>
+    <string formatted = "false" name="pref_playback_preview_while_seeking">Preview while seeking</string>
+    <string formatted = "false" name="pref_playback_preview_while_seeking_summary">Display preview image while changing playback position.</string>
+    <string formatted = "false" name="pref_playback_preview_while_seeking_network">Preview while seeking(network)</string>
+    <string formatted = "false" name="pref_playback_preview_while_seeking_network_summary">Display preview image for network play.</string>
+    <string formatted = "false" name="pref_playback_fast_seeking">Fast seking</string>
+    <string formatted = "false" name="pref_playback_fast_seeking_summary">Seek to the nearest keyframe position instead of exact position. This setting applies to HW+ and SW decoders.</string>
+    <string formatted = "false" name="pref_playback_play_alone">Play alone</string>
+    <string formatted = "false" name="pref_playback_play_alone_summary">Stop other players while playing back videos or audios. It also makes MX Player stopped id other players begin to play or you make a phone call.</string>
+    <string formatted = "false" name="pref_playback_media_buttons">Media buttons</string>
+    <string formatted = "false" name="pref_playback_media_buttons_summary">Respong to media control buttons from headset,bluetooth,etc.</string>
+    <string formatted = "false" name="pref_playback_next_prev">Next/Prev to FF/Rew</string>
+    <string formatted = "false" name="pref_playback_next_prev_summary">Treat Next/Prev media buttons as FF/Rew button.</string>
+    <string formatted = "false" name="pref_playback_toggle_playback">Toggle playback with play button</string>
+    <string formatted = "false" name="pref_playback_toggle_playback_summary">Toggle playback in response to \&#x27;play\&#x27; media button. This option is useful only for devices having trouble in the play button.</string>
+    <string formatted = "false" name="pref_playback_smart_previous">Smart previous button</string>
+    <string formatted = "false" name="pref_playback_smart_previous_summary">If you select \&#x27;previous\&#x27; button, it will resume again from the beginning or open the previous file depending upon the current play back position.</string>
+    <string formatted = "false" name="pref_bg_play_background_play">Background play</string>
+    <string formatted = "false" name="pref_bg_play_background_play_summary">Audio playback will be continued in the background even after screen closed.</string>
+    <string formatted = "false" name="pref_bg_play_background_play_audio">Background play(audio)</string>
+    <string formatted = "false" name="pref_bg_play_background_play_audio_summary">Background playback will be applied for audio playback.</string>
+    <string formatted = "false" name="pref_miscellaneous_video_resizing">Video resizing delay</string>
+    <string formatted = "false" name="pref_miscellaneous_video_resizing_summary">Set delay time to resize HW decoded video screen. Use higher values if screen flickers severely or freezes.</string>
+    <string formatted = "false" name="pref_miscellaneous_limit_video">Limit video resizing</string>
+    <string formatted = "false" name="pref_miscellaneous_limit_video_summary">Do not enhance video size if it exceeds its display size.(HW decoder only)</string>
+    <string formatted = "false" name="pref_miscellaneous_turnoff_button_backlight">Turn off button backlight</string>
+    <string formatted = "false" name="pref_miscellaneous_turnoff_button_backlight_summary">Turn off main buttons\&#x27; backlight during playback.(Please uncheck this option manually if this does not turn off backlight automatically. The device not turn off backlight automatically. The device might need to be rebooted iin some cases.)</string>
+    <string formatted = "false" name="pref_miscellaneous_loading_circle">Loading circle animation</string>
+    <string formatted = "false" name="pref_miscellaneous_software_navigation">Software navigation buttons</string>
+    <string formatted = "false" name="pref_miscellaneous_software_navigation_summary">This device has software navigation buttons.(back,home,menu,etc.) Check this option if buttons are not hidden automatically.</string>
+    <string formatted = "false" name="pref_miscellaneous_sceen_lock">Screen lock</string>
+    <string formatted = "false" name="pref_miscellaneous_sceen_lock_summary">Try other mode if default screen lock does not work.</string>
+    <string formatted = "false" name="pref_miscellaneous_android4_compat">Android 4.0 compatible mode</string>
+    <string formatted = "false" name="pref_miscellaneous_android4_compat_summary">Use this mode if you have issues with screen layout.</string>
+    <string formatted = "false" name="pref_hw_decoder_use_hwplus">Use HW+ decoder</string>
+    <string formatted = "false" name="pref_hw_decoder_hwplus_decoder_local">HW+ decoder (local)</string>
+    <string formatted = "false" name="pref_hw_decoder_hwplus_decoder_local_summary">Set HW+ decoder as default for playing videos stored on local files.</string>
+    <string formatted = "false" name="pref_hw_decoder_hwplus_decoder_network">HW+ decoder (network)</string>
+    <string formatted = "false" name="pref_hw_decoder_hwplus_decoder_network_summary">Set HW+ decoder as default for network play.</string>
+    <string formatted = "false" name="pref_hw_decoder_try_hw">Try HW decoder</string>
+    <string formatted = "false" name="pref_hw_decoder_try_hw_summary">Try HW decoder if HW+ decoder fails</string>
+    <string formatted = "false" name="pref_hw_decoder_hwplus_video">HW+ video codecs</string>
+    <string formatted = "false" name="pref_hw_decoder_hwplus_video_summary">Select video codecs to be played with HW+ decoder.</string>
+    <string formatted = "false" name="pref_hw_decoder_hwplus_audio">HW+ audio on SW video</string>
+    <string formatted = "false" name="pref_hw_decoder_hwplus_audio_summary">Use HW+ audio decoder if SW audio decoder fails in SW decoding mode.</string>
+    <string formatted = "false" name="pref_hw_decoder_try_hwplus">Try HW+ decoder</string>
+    <string formatted = "false" name="pref_hw_decoder_try_hwplus_summary">Try HW+ decoder if HW decoder fails.</string>
+    <string formatted = "false" name="pref_hw_decoder_correct_aspect">Correct aspect ratio</string>
+    <string formatted = "false" name="pref_hw_decoder_correct_aspect_summary">Correct HW decoder aspect ratio. Use this option if HW decoder ignores aspect ratio.</string>
+    <string formatted = "false" name="pref_hw_decoder_calibrate_playback">Calibrate playback position</string>
+    <string formatted = "false" name="pref_hw_decoder_calibrate_playback_summary">Enter seconds to adjust playback position of HW decoder. This is useful when playback position is displayed incorrectly.</string>
+    <string formatted = "false" name="pref_hw_decoder_hw_audio">HW audio track selectable</string>
+    <string formatted = "false" name="pref_hw_decoder_hw_audio_summary">If HW decoder natively supports selecting audio track, playback of secondary audio tracks will become smoother.</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_deocder_local">SW decoder (local)</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_deocder_local_summary">Use SW decoder for local files stored on the device.</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_decoder_network">SW decoder (network)</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_decoder_network_summary">Use SW decoder for playing remote network sources via HTTP,FTP,RTSP,MMS and more.</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_audio">SW audio</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_audio_summary">Use SW audio decoder instead of HW audio decoder.</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_audio_local">SW audio (local)</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_audio_local_summary">Use SW audio decoder for playing for local files stored on the device.</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_audio_network">SW audio (network)</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_audio_network_summary">Use SW audio decoder for playing remote network suouces.</string>
+    <string formatted = "false" name="pref_sw_decoder_cpu_core">CPU core limit</string>
+    <string formatted = "false" name="pref_sw_decoder_cpu_core_summary">Specify the maximum number of CPU cores to be used for SW decoding.</string>
+    <string formatted = "false" name="pref_sw_decoder_color_format">Color format</string>
+    <string formatted = "false" name="pref_sw_decoder_color_format_summary">YUV is experimental and does not work on all devices.</string>
+    <string formatted = "false" name="pref_sw_decoder_use_speedup">Use speedup tricks</string>
+    <string formatted = "false" name="pref_general_deinterlace">Deinterlace</string>
+    <string formatted = "false" name="pref_general_deinterlace_summary">Deinterlace by default. Currently deinterlacing works only with SW decoder.</string>
+    <string formatted = "false" name="pref_general_custom_codec">Custom codec</string>
+    <string formatted = "false" name="pref_general_custom_codec_summary">Use ARMv7 NEON type custom codec.</string>
+    <string formatted = "false" name="pref_audio_audio_player">Audio player</string>
+    <string formatted = "false" name="pref_audio_audio_player_summary">Use as an audio player.</string>
+    <string formatted = "false" name="pref_audio_volume_boost">Volume boost</string>
+    <string formatted = "false" name="pref_audio_volume_boost_summary">Audio volume can be boosted up to 200% if you use HW+ or SW decoder.</string>
+    <string formatted = "false" name="pref_audio_system_volume">System volume</string>
+    <string formatted = "false" name="pref_audio_system_volume_summary">Synchronize sound volume with the system media volume.</string>
+    <string formatted = "false" name="pref_audio_pause_on">Pause on headset disconnected</string>
+    <string formatted = "false" name="pref_audio_pause_on_summary">Pause playback when wired/Bluetooth headset disconnected from the device.</string>
+    <string formatted = "false" name="pref_audio_fade_on_start">Fade on start</string>
+    <string formatted = "false" name="pref_audio_fade_on_seek">Fade on seek</string>
+    <string formatted = "false" name="pref_audio_preferred_audio">Preferred audio language</string>
+    <string formatted = "false" name="pref_audio_preferred_audio_summary">Language of the audio track you want to use. It may not be used with HW decoder.</string>
+    <string formatted = "false" name="pref_audio_auido_delay">Audio delay</string>
+    <string formatted = "false" name="pref_audio_audio_delay_summary">Set audio delay time for audio synchronization. It may not be used with HW decoder.</string>
+    <string formatted = "false" name="pref_audio_bluetooth_audio_delay">Bluetooth audio delay</string>
+    <string formatted = "false" name="pref_audio_bluetooth_audio_delay_summary">Set Bluetooth audio delay time for audio synchronization. It may not be used with HW decoder.</string>
+    <string formatted = "false" name="pref_subtitle_enable_subtitles">Enable subtitles</string>
+    <string formatted = "false" name="pref_subtitle_enable_subtitles_summary">Show subtitles from external file on video startup.</string>
+    <string formatted = "false" name="pref_subtitle_enable_embedded">Enable embedded subtitles</string>
+    <string formatted = "false" name="pref_subtitle_subtitle_folder">Subtitle folder</string>
+    <string formatted = "false" name="pref_subtitle_subtitle_folder_summary">Subtitle folder path</string>
+    <string formatted = "false" name="pref_subtitle_char_encoding">Charcter encoding</string>
+    <string formatted = "false" name="pref_subtitle_char_encoding_summary">Select charcter encoding of your subtitle file.</string>
+    <string formatted = "false" name="pref_subtitle_preferred_subtitle">Preferred subtitle language</string>
+    <string formatted = "false" name="pref_subtitle_preferred_subtitle_summary">Language of the subtitle track you want to use. It may not be used with HW decoder.</string>
+    <string formatted = "false" name="pref_subtitle_default_sync">Default sync</string>
+    <string formatted = "false" name="pref_subtitle_default_sync_summary">Set default time adjustment for subtitle track synchronization.</string>
+    <string formatted = "false" name="pref_subtitle_sync_for_hw">Sync for HW decoder</string>
+    <string formatted = "false" name="pref_subtitle_sync_for_hw_summary">Adjust subtitle track synchronization for HW decoder.</string>
+    <string formatted = "false" name="pref_subtitle_appearance_text">Text</string>
+    <string formatted = "false" name="pref_subtitle_appearance_text_summary">Subtitle text settings:font,size,color,border,etc.</string>
+    <string formatted = "false" name="pref_subtitle_appearance_layout">Layout</string>
+    <string formatted = "false" name="pref_subtitle_appearance_layout_summary">Subtitle layout settings:alignment,padding,background color.</string>
+    <string formatted = "false" name="pref_subtitle_appearance_font_folder">Font folder</string>
+    <string formatted = "false" name="pref_subtitle_appearance_font_folder_summary">Font folder path</string>
+    <string formatted = "false" name="pref_subtitle_appearance_hw_acceleration">HW acceleration</string>
+    <string formatted = "false" name="pref_subtitle_appearance_hw_acceleration_summary">Hardware acceleration will be used to draw subtitles and on-screen controls.</string>
+    <string formatted = "false" name="pref_subtitle_text_processing_italic_effect">Italic effect</string>
+    <string formatted = "false" name="pref_subtitle_text_processing_italic_effect_summary">Sentences start with \&#x22;/\&#x22;(forward slash) will be displayed in italics.</string>
+    <string formatted = "false" name="pref_subtitle_text_processing_force_ltr_direction">Force LTR direction</string>
+    <string formatted = "false" name="pref_subtitle_text_processing_force_ltr_direction_summary">Force LTR(Left to Right) direction for RTL(Right to Left) subtitles.</string>
+    <string formatted = "false" name="pref_general_language">System default</string>
+    <string formatted = "false" name="pref_general_hw_acceleration">HW acceleration</string>
+    <string formatted = "false" name="pref_general_hw_acceleration_summary">Hardware acceleration will be used to draw subtitles and on-screen controls.</string>
+    <string formatted = "false" name="pref_general_play_media">Play media links</string>
+    <string formatted = "false" name="pref_general_play_media_summary">Play HTTP/HTTPS media links. This option can interfere with file downloading.</string>
+    <string formatted = "false" name="pref_general_http_user_agent">Http User-Agent</string>
+    <string formatted = "false" name="pref_general_http_user_agent_summary">Override \&#x27;User-Agent\&#x27; on connecting to web server. Leave blank to use default value.</string>
+    <string formatted = "false" name="pref_general_quit_button">Quit button</string>
+    <string formatted = "false" name="pref_general_quit_button_summary">Display Quit button on the menu. This will terminate the application completely unlink \&#x22;back\&#x22; or \&#x22;home\&#x22; button.</string>
+    <string formatted = "false" name="pref_general_edit_allow_editing">Allow editing</string>
+    <string formatted = "false" name="pref_general_edit_allow_editing_summary">Enable edit menu to delete or rename files/folders.</string>
+    <string formatted = "false" name="pref_general_edit_delete_subtitle">Delete subtitle files together</string>
+    <string formatted = "false" name="pref_general_user_data_clear_history">Clear history</string>
+    <string formatted = "false" name="pref_general_user_data_clear_history_summary">Clear all user activity records including playback and search history.</string>
+    <string formatted = "false" name="pref_general_user_data_clear_thumbnail">Clear thumbnail cache</string>
+    <string formatted = "false" name="pref_general_user_data_clear_thumbnail_summary">Clear thumbnail cached on the sdcard. Thumbnails will be generated again when media list is opened.</string>
+    <string formatted = "false" name="pref_general_user_data_cache_thumbnail">Cache thumbnail</string>
+    <string formatted = "false" name="pref_general_user_data_clear_font">Clear font cache</string>
+    <string formatted = "false" name="pref_general_user_data_clear_font_summary">Clear font cache for SubStation Alpha subtitle in case of corruption.</string>
+    <string formatted = "false" name="pref_general_user_data_rest_settings">Rest settings</string>
+    <string formatted = "false" name="pref_general_user_data_rest_settings_summary">Rest all settings to their default condition.</string>
+    <string formatted = "false" name="pref_general_user_data_export">Export</string>
+    <string formatted = "false" name="pref_general_user_data_export_summary">Export settings and activity records to a file.</string>
+    <string formatted = "false" name="pref_genreal_user_data_import">Import</string>
+    <string formatted = "false" name="pref_genreal_user_data_import_summary">Import settings and activity records from a file.</string>
 </resources>
