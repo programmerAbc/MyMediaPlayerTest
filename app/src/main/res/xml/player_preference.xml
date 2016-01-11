@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="@string/pref_cat_interface">
+    <Preference
+        android:title="@string/pref_interface_theme"
+        android:key="PLAYER_INTERFACE_THEME"
+        android:persistent="false"
+        />
+    <Preference
+        android:title="@string/pref_interface_style"
+        android:key="PLAYER_INTERFACE_STYLE"
+        android:persistent="false"
+        />
+    <Preference
+        android:title="@string/pref_interface_screen"
+        android:summary="@string/pref_interface_screen_summary"
+        android:key="PLAYER_INTERFACE_SCREEN"
+        android:persistent="false"
+        />
+    <Preference
+        android:title="@string/pref_interface_controls"
+        android:summary="@string/pref_interface_controls_summary"
+        android:key="PLAYER_INTERFACE_CONTROLS"
+        android:persistent="false"
+        />
+    <Preference
+        android:title="@string/pref_interface_navigation"
+        android:summary="@string/pref_interface_navigation_summary"
+        android:key="PLAYER_INTERFACE_NAVIGATION"
+        android:persistent="false"
+        />
+    <Preference
+        android:title="@string/pref_interface_double_tap"
+        android:summary="@string/pref_interface_double_tap_summary"
+        android:key="PLAYER_INTERFACE_DOUBLE_TAP_THE_BACK_BUTTON"
+        android:persistent="false"
+        />
+
+
+</PreferenceCategory>
+</PreferenceScreen>
