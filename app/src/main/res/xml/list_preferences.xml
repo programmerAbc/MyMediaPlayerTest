@@ -6,53 +6,54 @@
             android:dialogTitle="@string/pref_appearance_theme"
             android:entries="@array/list_theme_entries"
             android:entryValues="@array/list_theme_entryvalues"
-            android:key="PREF_LIST_THEME"
-            android:title="@string/pref_appearance_theme"/>
+            android:key="@string/pref_key_list_theme"
+            android:title="@string/pref_appearance_theme" />
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="PREF_LIST_LAST_MEDIA_IN_EACH_FOLDERS"
+            android:key="@string/pref_key_list_last_media_in_each_folders"
             android:summary="@string/pref_appearance_last_media_summary"
-            android:title="@string/pref_appearance_last_media"/>
+            android:title="@string/pref_appearance_last_media" />
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="PREF_LIST_SCROLL_DOWN_TO_LAST_MEDIA"
+            android:key="@string/pref_key_list_scroll_down_to_last_media"
             android:summary="@string/pref_appearance_scroll_down_summary"
-            android:title="@string/pref_appearance_scroll_down"/>
+            android:title="@string/pref_appearance_scroll_down" />
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="PREF_LIST_SELECT_THUMBNAIL"
+            android:key="@string/pref_key_list_select_thumbnail"
             android:summary="@string/pref_appearance_select_thumbnail_summary"
-            android:title="@string/pref_appearance_select_thumbnail"/>
+            android:title="@string/pref_appearance_select_thumbnail" />
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="PREF_LIST_FLOATING_BUTTON"
+            android:key="@string/pref_key_list_floating_button"
             android:summary="@string/pref_appearance_floating_button_summary"
-            android:title="@string/pref_appearance_floating_button"/>
+            android:title="@string/pref_appearance_floating_button" />
         <EditTextPreference
             android:defaultValue="7"
-            android:key="PREF_LIST_PERIOD_TAGGED_AS_NEW"
+            android:key="@string/pref_key_list_period_tagged_as_new"
             android:summary="@string/pref_appearance_period_tagged_summary"
-            android:title="@string/pref_appearance_period_tagged"/>
+            android:title="@string/pref_appearance_period_tagged" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_cat_scan">
         <Preference
-            android:key="PREF_SCAN_FOLDERS"
+            android:key="@string/pref_key_list_folders"
             android:persistent="false"
             android:summary="@string/pref_scan_folders_summary"
-            android:title="@string/pref_scan_folders"
-            />
+            android:title="@string/pref_scan_folders" />
         <Preference
-            android:key="PREF_SCAN_FILE_EXTENSIONS"
+            android:key="@string/pref_key_list_file_extensions"
             android:persistent="false"
             android:summary="@string/pref_scan_file_extensions_summary"
-            android:title="@string/pref_scan_file_extensions"
-            />
-
-    <CheckBoxPreference
-        android:key="PREF_SCAN_SHOW_HIDDEN_FILES_AND_FOLDERS"
-        android:title="@string/pref_scan_show_hidden"
-        android:summary="@string/pref_scan_show_hidden_summary"
-        android:defaultValue="false"
-        />
+            android:title="@string/pref_scan_file_extensions" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_list_recognize_nomedia"
+            android:summary="@string/pref_scan_recognize_nomedia_summary"
+            android:title="@string/pref_scan_recognize_nomedia" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_list_show_hidden_files_and_folders"
+            android:summary="@string/pref_scan_show_hidden_summary"
+            android:title="@string/pref_scan_show_hidden" />
     </PreferenceCategory>
 </PreferenceScreen>

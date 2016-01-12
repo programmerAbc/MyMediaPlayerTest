@@ -42,6 +42,8 @@
     <string formatted = "false" name="pref_scan_folders_summary">Select folders to be included in the media library</string>
     <string formatted = "false" name="pref_scan_file_extensions">File extensions</string>
     <string formatted = "false" name="pref_scan_file_extensions_summary">Select file extensions for folder scanning.It is possible to configure decoders per extension types.</string>
+    <string formatted = "false" name="pref_scan_recognize_nomedia">Recognize .nomedia</string>
+    <string formatted = "false" name="pref_scan_recognize_nomedia_summary">Exclude any media file from a video list if a \&#x22;.nomedia\&#x22; file exists in that folder or a parent folder.</string>
     <string formatted = "false" name="pref_scan_show_hidden">Show hidden files and folders</string>
     <string formatted = "false" name="pref_scan_show_hidden_summary">Show hidden folders and file starting with \&#x22;.\&#x22;.</string>
     <string formatted = "false" name="pref_interface_theme">Theme</string>
@@ -61,6 +63,7 @@
     <string formatted = "false" name="pref_playback_resume_only">Resume only the first file</string>
     <string formatted = "false" name="pref_playback_resume_only_summary">Apply resume setting only on the first file. Next files will start from the beginning.</string>
     <string formatted = "false" name="pref_playback_default_playback_speed">Default playback speed</string>
+    <string formatted = "false" name="pref_playback_default_playback_speed_summary">Enter default playback speed in percent(%). Valid range is 25% to 400%</string>
     <string formatted = "false" name="pref_playback_remember_selections">Remember selections</string>
     <string formatted = "false" name="pref_playback_remember_selections_summary">Remember selections for each files such as choice of audio track, subtitle track,decoder...</string>
     <string formatted = "false" name="pref_playback_back_to_list">Back to list</string>
@@ -94,10 +97,10 @@
     <string formatted = "false" name="pref_miscellaneous_loading_circle">Loading circle animation</string>
     <string formatted = "false" name="pref_miscellaneous_software_navigation">Software navigation buttons</string>
     <string formatted = "false" name="pref_miscellaneous_software_navigation_summary">This device has software navigation buttons.(back,home,menu,etc.) Check this option if buttons are not hidden automatically.</string>
-    <string formatted = "false" name="pref_miscellaneous_sceen_lock">Screen lock</string>
-    <string formatted = "false" name="pref_miscellaneous_sceen_lock_summary">Try other mode if default screen lock does not work.</string>
-    <string formatted = "false" name="pref_miscellaneous_android4_compat">Android 4.0 compatible mode</string>
-    <string formatted = "false" name="pref_miscellaneous_android4_compat_summary">Use this mode if you have issues with screen layout.</string>
+    <string formatted = "false" name="pref_miscellaneous_screen_lock">Screen lock</string>
+    <string formatted = "false" name="pref_miscellaneous_screen_lock_summary">Try other mode if default screen lock does not work.</string>
+    <string formatted = "false" name="pref_miscellaneous_android_4_compat">Android 4.0 compatible mode</string>
+    <string formatted = "false" name="pref_miscellaneous_android_4_compat_summary">Use this mode if you have issues with screen layout.</string>
     <string formatted = "false" name="pref_hw_decoder_use_hwplus">Use HW+ decoder</string>
     <string formatted = "false" name="pref_hw_decoder_hwplus_decoder_local">HW+ decoder (local)</string>
     <string formatted = "false" name="pref_hw_decoder_hwplus_decoder_local_summary">Set HW+ decoder as default for playing videos stored on local files.</string>
@@ -204,7 +207,7 @@
     <string formatted = "false" name="pref_genreal_user_data_import_summary">Import settings and activity records from a file.</string>
     <string name="pref_key_list_theme">pref_key_list_theme</string>
     <string name="pref_key_list_last_media_in_each_folders">pref_key_list_last_media_in_each_folders</string>
-    <stirng name="pref_key_list_scroll_down_to_last_media">pref_key_list_scroll_down_to_last_media</stirng>
+    <string name="pref_key_list_scroll_down_to_last_media">pref_key_list_scroll_down_to_last_media</string>
     <string name="pref_key_list_select_thumbnail">pref_key_list_select_thumbnail</string>
     <string name="pref_key_list_floating_button">pref_key_list_floating_button</string>
     <string name="pref_key_list_period_tagged_as_new">pref_key_list_period_tagged_as_new</string>
@@ -233,7 +236,7 @@
     <string name="pref_key_player_toggle_playback_with_play_button">pref_key_player_toggle_playback_with_play_button</string>
     <string name="pref_key_player_smart_previous_button">pref_key_player_smart_previous_button</string>
     <string name="pref_key_player_background_play">pref_key_player_background_play</string>
-    <string name="pref_key_player_background_paly_audio">pref_key_player_background_paly_audio</string>
+    <string name="pref_key_player_background_play_audio">pref_key_player_background_play_audio</string>
     <string name="pref_key_player_video_resizing_delay">pref_key_player_video_resizing_delay</string>
     <string name="pref_key_player_limit_video_resizing">pref_key_player_limit_video_resizing</string>
     <string name="pref_key_player_turn_off_button_backlight">pref_key_player_turn_off_button_backlight</string>
@@ -241,4 +244,60 @@
     <string name="pref_key_player_software_navigation_buttons">pref_key_player_software_navigation_buttons</string>
     <string name="pref_key_player_screen_lock">pref_key_player_screen_lock</string>
     <string name="pref_key_player_android_4_compatible_mode">pref_key_player_android_4_compatible_mode</string>
+    <string name="pref_key_decoder_use_hwplus_decoder">pref_key_decoder_use_hwplus_decoder</string>
+    <string name="pref_key_decoder_hwplus_decoder_local">pref_key_decoder_hwplus_decoder_local</string>
+    <string name="pref_key_decoder_hwplus_decoder_network">pref_key_decoder_hwplus_decoder_network</string>
+    <string name="pref_key_decoder_try_hw_decoder">pref_key_decoder_try_hw_decoder</string>
+    <string name="pref_key_decoder_hwplus_video_codecs">pref_key_decoder_hwplus_video_codecs</string>
+    <string name="pref_key_decoder_hwplus_audio_on_sw_video">pref_key_decoder_hwplus_audio_on_sw_video</string>
+    <string name="pref_key_decoder_try_hwplus_decoder">pref_key_decoder_try_hwplus_decoder</string>
+    <string name="pref_key_decoder_correct_aspect_ratio">pref_key_decoder_correct_aspect_ratio</string>
+    <string name="pref_key_decoder_calibrate_playback_position">pref_key_decoder_calibrate_playback_position</string>
+    <string name="pref_key_decoder_hw_audio_track_selectable">pref_key_decoder_hw_audio_track_selectable</string>
+    <string name="pref_key_decoder_sw_decoder">pref_key_decoder_sw_decoder</string>
+    <string name="pref_key_decoder_sw_decoder_network">pref_key_decoder_sw_decoder_network</string>
+    <string name="pref_key_decoder_sw_audio">pref_key_decoder_sw_audio</string>
+    <string name="pref_key_decoder_sw_audio_local">pref_key_decoder_sw_audio_local</string>
+    <string name="pref_key_decoder_sw_audio_network">pref_key_decoder_sw_audio_network</string>
+    <string name="pref_key_decoder_cpu_core_limit">pref_key_decoder_cpu_core_limit</string>
+    <string name="pref_key_decoder_color_format">pref_key_decoder_color_format</string>
+    <string name="pref_key_decoder_use_speedup_tricks">pref_key_decoder_use_speedup_tricks</string>
+    <string name="pref_key_decoder_deinterlace">pref_key_decoder_deinterlace</string>
+    <string name="pref_key_decoder_custom_codec">pref_key_decoder_custom_codec</string>
+    <string name="pref_key_audio_audio_player">pref_key_audio_audio_player</string>
+    <string name="pref_key_audio_volume_boost">pref_key_audio_volume_boost</string>
+    <string name="pref_key_audio_system_volume">pref_key_audio_system_volume</string>
+    <string name="pref_key_audio_pause_on_headset_disconnected">pref_key_audio_pause_on_headset_disconnected</string>
+    <string name="pref_key_audio_fade_on_start">pref_key_audio_fade_on_start</string>
+    <string name="pref_key_audio_fade_on_seek">pref_key_audio_fade_on_seek</string>
+    <string name="pref_key_audio_preferred_audio_language">pref_key_audio_preferred_audio_language</string>
+    <string name="pref_key_audio_audio_delay">pref_key_audio_audio_delay</string>
+    <string name="pref_key_audio_bluetooth_audio_delay">pref_key_audio_bluetooth_audio_delay</string>
+    <string name="pref_key_subtitle_enable_subtitles">pref_key_subtitle_enable_subtitles</string>
+    <string name="pref_key_subtitle_enable_embedded_subtitles">pref_key_subtitle_enable_embedded_subtitles</string>
+    <string name="pref_key_subtitle_subtitle_folder">pref_key_subtitle_subtitle_folder</string>
+    <string name="pref_key_subtitle_charcter_encoding">pref_key_subtitle_charcter_encoding</string>
+    <string name="pref_key_subtitle_preferred_subtitle_language">pref_key_subtitle_preferred_subtitle_language</string>
+    <string name="pref_key_subtitle_default_sync">pref_key_subtitle_default_sync</string>
+    <string name="pref_key_subtitle_sync_for_hw_decoder">pref_key_subtitle_sync_for_hw_decoder</string>
+    <string name="pref_key_subtitle_text">pref_key_subtitle_text</string>
+    <string name="pref_key_subtitle_layout">pref_key_subtitle_layout</string>
+    <string name="pref_key_subtitle_font_folder">pref_key_subtitle_font_folder</string>
+    <string name="pref_key_subtitle_hw_acceleration">pref_key_subtitle_hw_acceleration</string>
+    <string name="pref_key_subtitle_italic_effect">pref_key_subtitle_italic_effect</string>
+    <string name="pref_key_subtitle_force_ltr_direction">pref_key_subtitle_force_ltr_direction</string>
+    <string name="pref_key_general_language">pref_key_general_language</string>
+    <string name="pref_key_general_hw_accleration">pref_key_general_hw_accleration</string>
+    <string name="pref_key_general_play_media_links">pref_key_general_play_media_links</string>
+    <string name="pref_key_general_http_user_agent">pref_key_general_http_user_agent</string>
+    <string name="pref_key_general_quit_button">pref_key_general_quit_button</string>
+    <string name="pref_key_general_allow_editing">pref_key_general_allow_editing</string>
+    <string name="pref_key_general_delete_subtitle_files_together">pref_key_general_delete_subtitle_files_together</string>
+    <string name="pref_key_general_clear_history">pref_key_general_clear_history</string>
+    <string name="pref_key_general_clear_thumbnail_cache">pref_key_general_clear_thumbnail_cache</string>
+    <string name="pref_key_general_cache_thumbnail">pref_key_general_cache_thumbnail</string>
+    <string name="pref_key_general_clear_font_cache">pref_key_general_clear_font_cache</string>
+    <string name="pref_key_general_reset_settings">pref_key_general_reset_settings</string>
+    <string name="pref_key_general_export">pref_key_general_export</string>
+    <string name="pref_key_general_import">pref_key_general_import</string>
 </resources>

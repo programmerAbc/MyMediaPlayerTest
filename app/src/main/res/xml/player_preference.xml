@@ -1,41 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-<PreferenceCategory android:title="@string/pref_cat_interface">
-    <Preference
-        android:title="@string/pref_interface_theme"
-        android:key="PLAYER_INTERFACE_THEME"
-        android:persistent="false"
-        />
-    <Preference
-        android:title="@string/pref_interface_style"
-        android:key="PLAYER_INTERFACE_STYLE"
-        android:persistent="false"
-        />
-    <Preference
-        android:title="@string/pref_interface_screen"
-        android:summary="@string/pref_interface_screen_summary"
-        android:key="PLAYER_INTERFACE_SCREEN"
-        android:persistent="false"
-        />
-    <Preference
-        android:title="@string/pref_interface_controls"
-        android:summary="@string/pref_interface_controls_summary"
-        android:key="PLAYER_INTERFACE_CONTROLS"
-        android:persistent="false"
-        />
-    <Preference
-        android:title="@string/pref_interface_navigation"
-        android:summary="@string/pref_interface_navigation_summary"
-        android:key="PLAYER_INTERFACE_NAVIGATION"
-        android:persistent="false"
-        />
-    <Preference
-        android:title="@string/pref_interface_double_tap"
-        android:summary="@string/pref_interface_double_tap_summary"
-        android:key="PLAYER_INTERFACE_DOUBLE_TAP_THE_BACK_BUTTON"
-        android:persistent="false"
-        />
-
-
-</PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_interface">
+        <Preference
+            android:key="@string/pref_key_player_theme"
+            android:persistent="false"
+            android:title="@string/pref_interface_theme" />
+        <Preference
+            android:key="@string/pref_key_player_style"
+            android:persistent="false"
+            android:title="@string/pref_interface_style" />
+        <Preference
+            android:key="@string/pref_key_player_screen"
+            android:persistent="false"
+            android:summary="@string/pref_interface_screen_summary"
+            android:title="@string/pref_interface_screen" />
+        <Preference
+            android:key="@string/pref_key_player_controls"
+            android:persistent="false"
+            android:summary="@string/pref_interface_controls_summary"
+            android:title="@string/pref_interface_controls" />
+        <Preference
+            android:key="@string/pref_key_player_navigation"
+            android:persistent="false"
+            android:summary="@string/pref_interface_navigation_summary"
+            android:title="@string/pref_interface_navigation" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_double_tap_the_back_button"
+            android:summary="@string/pref_interface_double_tap_summary"
+            android:title="@string/pref_interface_double_tap" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_quick_zoom"
+            android:summary="@string/pref_interface_quick_zoom_summary"
+            android:title="@string/pref_interface_quick_zoom" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_playback">
+        <Preference
+            android:key="@string/pref_key_player_resume"
+            android:persistent="false"
+            android:summary="@string/pref_playback_resume_summary"
+            android:title="@string/pref_playback_resume" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_resume_only_the_first_file"
+            android:summary="@string/pref_playback_resume_only_summary"
+            android:title="@string/pref_playback_resume_only" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:dialogMessage="@string/pref_playback_default_playback_speed_summary"
+            android:dialogTitle="@string/pref_playback_default_playback_speed"
+            android:key="@string/pref_key_player_default_playback_speed"
+            android:title="@string/pref_playback_default_playback_speed" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_remember_selections"
+            android:summary="@string/pref_playback_remember_selections_summary"
+            android:title="@string/pref_playback_remember_selections" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_back_to_list"
+            android:summary="@string/pref_playback_back_to_list_summary"
+            android:title="@string/pref_playback_back_to_list" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_preview_while_seeking"
+            android:summary="@string/pref_playback_preview_while_seeking_summary"
+            android:title="@string/pref_playback_preview_while_seeking" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_preview_while_seeking_network"
+            android:summary="@string/pref_playback_preview_while_seeking_network_summary"
+            android:title="@string/pref_playback_preview_while_seeking_network" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_fast_seeking"
+            android:summary="@string/pref_playback_fast_seeking_summary"
+            android:title="@string/pref_playback_fast_seeking" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_play_alone"
+            android:summary="@string/pref_playback_play_alone_summary"
+            android:title="@string/pref_playback_play_alone" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_media_buttons"
+            android:summary="@string/pref_playback_media_buttons_summary"
+            android:title="@string/pref_playback_media_buttons" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_next_prev_to_ff_rew"
+            android:summary="@string/pref_playback_next_prev_summary"
+            android:title="@string/pref_playback_next_prev" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_toggle_playback_with_play_button"
+            android:summary="@string/pref_playback_toggle_playback_summary"
+            android:title="@string/pref_playback_toggle_playback" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_smart_previous_button"
+            android:summary="@string/pref_playback_smart_previous_summary"
+            android:title="@string/pref_playback_smart_previous" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_background_play">
+        <CheckBoxPreference
+            android:title="@string/pref_bg_play_background_play"
+            android:summary="@string/pref_bg_play_background_play_summary"
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_background_play"
+            />
+        <CheckBoxPreference
+            android:title="@string/pref_bg_play_background_play_audio"
+            android:summary="@string/pref_bg_play_background_play_audio_summary"
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_background_play_audio"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_miscellaneous">
+        <EditTextPreference
+            android:title="@string/pref_miscellaneous_video_resizing"
+            android:summary="@string/pref_miscellaneous_video_resizing_summary"
+            android:dialogMessage="@string/pref_miscellaneous_video_resizing_summary"
+            android:dialogTitle="@string/pref_miscellaneous_video_resizing"
+            android:key="@string/pref_key_player_video_resizing_delay"
+            android:defaultValue="0"
+            />
+        <CheckBoxPreference
+            android:title="@string/pref_miscellaneous_limit_video"
+            android:summary="@string/pref_miscellaneous_limit_video_summary"
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_limit_video_resizing"
+            />
+        <CheckBoxPreference
+            android:title="@string/pref_miscellaneous_turnoff_button_backlight"
+            android:summary="@string/pref_miscellaneous_turnoff_button_backlight_summary"
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_turn_off_button_backlight"
+            />
+        <CheckBoxPreference
+            android:title="@string/pref_miscellaneous_loading_circle"
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_loading_circle_animation"
+            />
+        <CheckBoxPreference
+            android:title="@string/pref_miscellaneous_software_navigation"
+            android:summary="@string/pref_miscellaneous_software_navigation_summary"
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_software_navigation_buttons"
+            />
+        <CheckBoxPreference
+            android:title="@string/pref_miscellaneous_screen_lock"
+            android:summary="@string/pref_miscellaneous_screen_lock_summary"
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_screen_lock"
+            />
+        <CheckBoxPreference
+            android:title="@string/pref_miscellaneous_android_4_compat"
+            android:summary="@string/pref_miscellaneous_android_4_compat_summary"
+            android:defaultValue="false"
+            android:key="@string/pref_key_player_android_4_compatible_mode"
+            />
+    </PreferenceCategory>
 </PreferenceScreen>
