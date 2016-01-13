@@ -120,8 +120,8 @@
     <string formatted = "false" name="pref_hw_decoder_calibrate_playback_summary">Enter seconds to adjust playback position of HW decoder. This is useful when playback position is displayed incorrectly.</string>
     <string formatted = "false" name="pref_hw_decoder_hw_audio">HW audio track selectable</string>
     <string formatted = "false" name="pref_hw_decoder_hw_audio_summary">If HW decoder natively supports selecting audio track, playback of secondary audio tracks will become smoother.</string>
-    <string formatted = "false" name="pref_sw_decoder_sw_deocder_local">SW decoder (local)</string>
-    <string formatted = "false" name="pref_sw_decoder_sw_deocder_local_summary">Use SW decoder for local files stored on the device.</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_decoder_local">SW decoder (local)</string>
+    <string formatted = "false" name="pref_sw_decoder_sw_decoder_local_summary">Use SW decoder for local files stored on the device.</string>
     <string formatted = "false" name="pref_sw_decoder_sw_decoder_network">SW decoder (network)</string>
     <string formatted = "false" name="pref_sw_decoder_sw_decoder_network_summary">Use SW decoder for playing remote network sources via HTTP,FTP,RTSP,MMS and more.</string>
     <string formatted = "false" name="pref_sw_decoder_sw_audio">SW audio</string>
@@ -151,17 +151,18 @@
     <string formatted = "false" name="pref_audio_fade_on_seek">Fade on seek</string>
     <string formatted = "false" name="pref_audio_preferred_audio">Preferred audio language</string>
     <string formatted = "false" name="pref_audio_preferred_audio_summary">Language of the audio track you want to use. It may not be used with HW decoder.</string>
-    <string formatted = "false" name="pref_audio_auido_delay">Audio delay</string>
+    <string formatted = "false" name="pref_audio_audio_delay">Audio delay</string>
     <string formatted = "false" name="pref_audio_audio_delay_summary">Set audio delay time for audio synchronization. It may not be used with HW decoder.</string>
     <string formatted = "false" name="pref_audio_bluetooth_audio_delay">Bluetooth audio delay</string>
     <string formatted = "false" name="pref_audio_bluetooth_audio_delay_summary">Set Bluetooth audio delay time for audio synchronization. It may not be used with HW decoder.</string>
     <string formatted = "false" name="pref_subtitle_enable_subtitles">Enable subtitles</string>
     <string formatted = "false" name="pref_subtitle_enable_subtitles_summary">Show subtitles from external file on video startup.</string>
     <string formatted = "false" name="pref_subtitle_enable_embedded">Enable embedded subtitles</string>
+    <string formatted = "false" name="pref_subtitle_enable_embedded_summary">Show subtitles embedded in the video file or stream.</string>
     <string formatted = "false" name="pref_subtitle_subtitle_folder">Subtitle folder</string>
     <string formatted = "false" name="pref_subtitle_subtitle_folder_summary">Subtitle folder path</string>
-    <string formatted = "false" name="pref_subtitle_char_encoding">Charcter encoding</string>
-    <string formatted = "false" name="pref_subtitle_char_encoding_summary">Select charcter encoding of your subtitle file.</string>
+    <string formatted = "false" name="pref_subtitle_character_encoding">Charcter encoding</string>
+    <string formatted = "false" name="pref_subtitle_character_encoding_summary">Select charcter encoding of your subtitle file.</string>
     <string formatted = "false" name="pref_subtitle_preferred_subtitle">Preferred subtitle language</string>
     <string formatted = "false" name="pref_subtitle_preferred_subtitle_summary">Language of the subtitle track you want to use. It may not be used with HW decoder.</string>
     <string formatted = "false" name="pref_subtitle_default_sync">Default sync</string>
@@ -180,7 +181,8 @@
     <string formatted = "false" name="pref_subtitle_text_processing_italic_effect_summary">Sentences start with \&#x22;/\&#x22;(forward slash) will be displayed in italics.</string>
     <string formatted = "false" name="pref_subtitle_text_processing_force_ltr_direction">Force LTR direction</string>
     <string formatted = "false" name="pref_subtitle_text_processing_force_ltr_direction_summary">Force LTR(Left to Right) direction for RTL(Right to Left) subtitles.</string>
-    <string formatted = "false" name="pref_general_language">System default</string>
+    <string formatted = "false" name="pref_general_language">Language</string>
+    <string formatted = "false" name="pref_general_language_summary">System default</string>
     <string formatted = "false" name="pref_general_hw_acceleration">HW acceleration</string>
     <string formatted = "false" name="pref_general_hw_acceleration_summary">Hardware acceleration will be used to draw subtitles and on-screen controls.</string>
     <string formatted = "false" name="pref_general_play_media">Play media links</string>
@@ -203,8 +205,8 @@
     <string formatted = "false" name="pref_general_user_data_rest_settings_summary">Rest all settings to their default condition.</string>
     <string formatted = "false" name="pref_general_user_data_export">Export</string>
     <string formatted = "false" name="pref_general_user_data_export_summary">Export settings and activity records to a file.</string>
-    <string formatted = "false" name="pref_genreal_user_data_import">Import</string>
-    <string formatted = "false" name="pref_genreal_user_data_import_summary">Import settings and activity records from a file.</string>
+    <string formatted = "false" name="pref_general_user_data_import">Import</string>
+    <string formatted = "false" name="pref_general_user_data_import_summary">Import settings and activity records from a file.</string>
     <string name="pref_key_list_theme">pref_key_list_theme</string>
     <string name="pref_key_list_last_media_in_each_folders">pref_key_list_last_media_in_each_folders</string>
     <string name="pref_key_list_scroll_down_to_last_media">pref_key_list_scroll_down_to_last_media</string>
@@ -254,7 +256,7 @@
     <string name="pref_key_decoder_correct_aspect_ratio">pref_key_decoder_correct_aspect_ratio</string>
     <string name="pref_key_decoder_calibrate_playback_position">pref_key_decoder_calibrate_playback_position</string>
     <string name="pref_key_decoder_hw_audio_track_selectable">pref_key_decoder_hw_audio_track_selectable</string>
-    <string name="pref_key_decoder_sw_decoder">pref_key_decoder_sw_decoder</string>
+    <string name="pref_key_decoder_sw_decoder_local">pref_key_decoder_sw_decoder_local</string>
     <string name="pref_key_decoder_sw_decoder_network">pref_key_decoder_sw_decoder_network</string>
     <string name="pref_key_decoder_sw_audio">pref_key_decoder_sw_audio</string>
     <string name="pref_key_decoder_sw_audio_local">pref_key_decoder_sw_audio_local</string>

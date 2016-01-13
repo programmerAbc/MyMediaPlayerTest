@@ -162,4 +162,6 @@
             android:key="@string/pref_key_player_android_4_compatible_mode"
             />
     </PreferenceCategory>
+
+
 </PreferenceScreen>

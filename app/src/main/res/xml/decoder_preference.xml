@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="@string/pref_cat_hw_decoder">
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_use_hwplus"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_use_hwplus_decoder"
+        />
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_hwplus_decoder_local"
+        android:summary="@string/pref_hw_decoder_hwplus_decoder_local_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_hwplus_decoder_local"
+        android:dependency="@string/pref_key_decoder_use_hwplus_decoder"
+        />
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_hwplus_decoder_network"
+        android:summary="@string/pref_hw_decoder_hwplus_decoder_network_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_hwplus_decoder_network"
+        android:dependency="@string/pref_key_decoder_use_hwplus_decoder"
+        />
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_try_hw"
+        android:summary="@string/pref_hw_decoder_try_hw_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_try_hw_decoder"
+        android:dependency="@string/pref_key_decoder_use_hwplus_decoder"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_hwplus_video"
+        android:summary="@string/pref_hw_decoder_hwplus_video_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_hwplus_video_codecs"
+        android:dependency="@string/pref_key_decoder_use_hwplus_decoder"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_hwplus_audio"
+        android:summary="@string/pref_hw_decoder_hwplus_audio_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_hwplus_audio_on_sw_video"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_try_hwplus"
+        android:summary="@string/pref_hw_decoder_try_hwplus_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_try_hwplus_decoder"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_correct_aspect"
+        android:summary="@string/pref_hw_decoder_correct_aspect_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_correct_aspect_ratio"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_calibrate_playback"
+        android:summary="@string/pref_hw_decoder_calibrate_playback_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_calibrate_playback_position"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_hw_decoder_hw_audio"
+        android:summary="@string/pref_hw_decoder_hw_audio_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_hw_audio_track_selectable"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_sw_decoder_sw_decoder_local"
+        android:summary="@string/pref_sw_decoder_sw_decoder_local_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_sw_decoder_local"
+        />
+    <CheckBoxPreference
+        android:title="@string/pref_sw_decoder_sw_decoder_network"
+        android:summary="@string/pref_sw_decoder_sw_decoder_network_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_sw_decoder_network"
+        />
+    <CheckBoxPreference
+        android:title="@string/pref_sw_decoder_sw_audio"
+        android:summary="@string/pref_sw_decoder_sw_audio_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_sw_audio"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_sw_decoder_sw_audio_local"
+        android:summary="@string/pref_sw_decoder_sw_audio_local_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_sw_audio_local"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_sw_decoder_sw_audio_network"
+        android:summary="@string/pref_sw_decoder_sw_audio_network_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_sw_audio_network"
+        />
+    <Preference
+        android:title="@string/pref_sw_decoder_cpu_core"
+        android:summary="@string/pref_sw_decoder_cpu_core_summary"
+        android:persistent="false"
+        android:key="@string/pref_key_decoder_cpu_core_limit"
+        />
+    <Preference
+        android:title="@string/pref_sw_decoder_color_format"
+        android:summary="@string/pref_sw_decoder_color_format_summary"
+        android:persistent="false"
+        android:key="@string/pref_key_decoder_color_format"
+        />
+    <CheckBoxPreference
+        android:title="@string/pref_sw_decoder_use_speedup"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_use_speedup_tricks"
+        />
+    <CheckBoxPreference
+        android:title="@string/pref_general_deinterlace"
+        android:summary="@string/pref_general_deinterlace_summary"
+        android:defaultValue="false"
+        android:key="@string/pref_key_decoder_deinterlace"
+        />
+    <Preference
+        android:title="@string/pref_general_custom_codec"
+        android:summary="@string/pref_general_custom_codec_summary"
+        android:persistent="false"
+        android:key="@string/pref_key_decoder_custom_codec"
+        />
+</PreferenceCategory>
+</PreferenceScreen>

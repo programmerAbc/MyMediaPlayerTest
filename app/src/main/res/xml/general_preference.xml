@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="@string/pref_key_general_language"
+        android:persistent="false"
+        android:summary="@string/pref_general_language_summary"
+        android:title="@string/pref_general_language" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_general_hw_accleration"
+        android:summary="@string/pref_general_hw_acceleration_summary"
+        android:title="@string/pref_general_hw_acceleration" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_general_play_media_links"
+        android:summary="@string/pref_general_play_media_summary"
+        android:title="@string/pref_general_play_media" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:dialogMessage="@string/pref_general_http_user_agent_summary"
+        android:dialogTitle="@string/pref_general_http_user_agent"
+        android:key="@string/pref_key_general_http_user_agent"
+        android:summary="@string/pref_general_http_user_agent_summary"
+        android:title="@string/pref_general_http_user_agent" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_general_quit_button"
+        android:summary="@string/pref_general_quit_button_summary"
+        android:title="@string/pref_general_quit_button" />
+    <PreferenceCategory android:title="@string/pref_cat_edit">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_general_allow_editing"
+            android:summary="@string/pref_general_edit_allow_editing_summary"
+            android:title="@string/pref_general_edit_allow_editing" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_general_delete_subtitle_files_together"
+            android:title="@string/pref_general_edit_delete_subtitle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_user_data">
+        <Preference
+            android:key="@string/pref_key_general_clear_history"
+            android:persistent="false"
+            android:summary="@string/pref_general_user_data_clear_history_summary"
+            android:title="@string/pref_general_user_data_clear_history" />
+        <Preference
+            android:key="@string/pref_key_general_clear_thumbnail_cache"
+            android:persistent="false"
+            android:summary="@string/pref_general_user_data_clear_thumbnail_summary"
+            android:title="@string/pref_general_user_data_clear_thumbnail" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_general_cache_thumbnail"
+            android:title="@string/pref_general_user_data_cache_thumbnail" />
+        <Preference
+            android:key="@string/pref_key_general_clear_font_cache"
+            android:persistent="false"
+            android:summary="@string/pref_general_user_data_clear_font_summary"
+            android:title="@string/pref_general_user_data_clear_font" />
+        <Preference
+            android:key="@string/pref_key_general_reset_settings"
+            android:persistent="false"
+            android:summary="@string/pref_general_user_data_rest_settings_summary"
+            android:title="@string/pref_general_user_data_rest_settings" />
+        <Preference
+            android:key="@string/pref_key_general_export"
+            android:persistent="false"
+            android:summary="@string/pref_general_user_data_export_summary"
+            android:title="@string/pref_general_user_data_export" />
+        <Preference
+            android:key="@string/pref_key_general_import"
+            android:persistent="false"
+            android:summary="@string/pref_general_user_data_import_summary"
+            android:title="@string/pref_general_user_data_import" />
+    </PreferenceCategory>
+</PreferenceScreen>

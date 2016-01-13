@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_subtitle_enable_subtitles"
+        android:summary="@string/pref_subtitle_enable_subtitles_summary"
+        android:title="@string/pref_subtitle_enable_subtitles" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_subtitle_enable_embedded_subtitles"
+        android:summary="@string/pref_subtitle_enable_embedded_summary"
+        android:title="@string/pref_subtitle_enable_embedded" />
+    <Preference
+        android:key="@string/pref_key_subtitle_subtitle_folder"
+        android:persistent="false"
+        android:summary="@string/pref_subtitle_subtitle_folder_summary"
+        android:title="@string/pref_subtitle_subtitle_folder" />
+    <Preference
+        android:key="@string/pref_key_subtitle_charcter_encoding"
+        android:persistent="false"
+        android:summary="@string/pref_subtitle_character_encoding_summary"
+        android:title="@string/pref_subtitle_character_encoding" />
+    <Preference
+        android:key="@string/pref_key_subtitle_preferred_subtitle_language"
+        android:persistent="false"
+        android:summary="@string/pref_subtitle_preferred_subtitle_summary"
+        android:title="@string/pref_subtitle_preferred_subtitle" />
+    <EditTextPreference
+        android:defaultValue="0"
+        android:dialogMessage="@string/pref_subtitle_default_sync_summary"
+        android:dialogTitle="@string/pref_subtitle_default_sync"
+        android:key="@string/pref_key_subtitle_default_sync"
+        android:summary="@string/pref_subtitle_default_sync_summary"
+        android:title="@string/pref_subtitle_default_sync" />
+    <EditTextPreference
+        android:defaultValue="0"
+        android:dialogMessage="@string/pref_subtitle_sync_for_hw_summary"
+        android:dialogTitle="@string/pref_subtitle_sync_for_hw"
+        android:key="@string/pref_key_subtitle_sync_for_hw_decoder"
+        android:summary="@string/pref_subtitle_sync_for_hw_summary"
+        android:title="@string/pref_subtitle_sync_for_hw" />
+    <PreferenceCategory android:title="@string/pref_cat_appearance">
+        <Preference
+            android:key="@string/pref_key_subtitle_text"
+            android:persistent="false"
+            android:summary="@string/pref_subtitle_appearance_text"
+            android:title="@string/pref_subtitle_appearance_text_summary" />
+        <Preference
+            android:key="@string/pref_key_subtitle_layout"
+            android:persistent="false"
+            android:summary="@string/pref_subtitle_appearance_layout"
+            android:title="@string/pref_subtitle_appearance_layout_summary" />
+        <Preference
+            android:key="@string/pref_key_subtitle_font_folder"
+            android:persistent="false"
+            android:summary="@string/pref_subtitle_appearance_font_folder"
+            android:title="@string/pref_subtitle_appearance_font_folder_summary" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_subtitle_hw_acceleration"
+            android:summary="@string/pref_subtitle_appearance_hw_acceleration_summary"
+            android:title="@string/pref_subtitle_appearance_hw_acceleration" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cat_text_processing">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_subtitle_italic_effect"
+            android:summary="@string/pref_subtitle_text_processing_italic_effect_summary"
+            android:title="@string/pref_subtitle_text_processing_italic_effect" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_subtitle_force_ltr_direction"
+            android:summary="@string/pref_subtitle_text_processing_force_ltr_direction_summary"
+            android:title="@string/pref_subtitle_text_processing_force_ltr_direction" />
+    </PreferenceCategory>
+</PreferenceScreen>
