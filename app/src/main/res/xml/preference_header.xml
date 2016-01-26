@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:fragment="user.example.com.mymediaplayertest.app_prefs.list_pref_frag"
+        android:title="@string/pref_header_list"
+        android:icon="@drawable/ic_list"
+        />
+    <header
+        android:fragment="user.example.com.mymediaplayertest.app_prefs.player_pref_frag"
+        android:title="@string/pref_header_player"
+        android:icon="@drawable/ic_player"
+        />
+    <header
+        android:fragment="user.example.com.mymediaplayertest.app_prefs.decoder_pref_frag"
+        android:title="@string/pref_header_decoder"
+        android:icon="@drawable/ic_decoder"
+        />
+    <header
+        android:fragment="user.example.com.mymediaplayertest.app_prefs.audio_pref_frag"
+        android:title="@string/pref_header_audio"
+        android:icon="@drawable/ic_audio"
+        />
+    <header
+        android:fragment="user.example.com.mymediaplayertest.app_prefs.subtitle_pref_frag"
+        android:title="@string/pref_header_subtitle"
+        android:icon="@drawable/ic_subtitle"
+        />
+    <header
+        android:fragment="user.example.com.mymediaplayertest.app_prefs.general_pref_frag"
+        android:title="@string/pref_header_general"
+        android:icon="@drawable/ic_general"
+        />
+</preference-headers>

@@ -302,4 +302,5 @@
     <string name="pref_key_general_reset_settings">pref_key_general_reset_settings</string>
     <string name="pref_key_general_export">pref_key_general_export</string>
     <string name="pref_key_general_import">pref_key_general_import</string>
+    <string name="app_pref_activity_label">Preference</string>
 </resources>

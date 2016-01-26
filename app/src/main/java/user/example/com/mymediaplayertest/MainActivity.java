@@ -1,6 +1,7 @@
 package user.example.com.mymediaplayertest;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -10,8 +11,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import user.example.com.mymediaplayertest.app_prefs.AppPerferenceActivity;
 
+public class MainActivity extends AppCompatActivity {
+    private static final int SHOW_PREFERENCES = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +40,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-
-
-        return super.onOptionsItemSelected(item);
+        int id=item.getItemId();
+        switch(id){
+            case R.id.menu_setting:{
+                startActivityForResult(new Intent(this, AppPerferenceActivity.class),SHOW_PREFERENCES);
+                return true;
+            }
+            default: {
+                return super.onOptionsItemSelected(item);
+            }
+        }
     }
 }
