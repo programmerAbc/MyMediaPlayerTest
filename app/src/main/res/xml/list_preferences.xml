@@ -40,13 +40,15 @@
             android:persistent="false"
             android:summary="@string/pref_scan_folders_summary"
             android:title="@string/pref_scan_folders"
-            android:fragment="user.example.com.mymediaplayertest.app_prefs.audio_pref_frag"
+            android:fragment="user.example.com.mymediaplayertest.app_prefs.list_folder_pref_frag"
             />
         <Preference
             android:key="@string/pref_key_list_file_extensions"
             android:persistent="false"
             android:summary="@string/pref_scan_file_extensions_summary"
-            android:title="@string/pref_scan_file_extensions" />
+            android:title="@string/pref_scan_file_extensions"
+            android:fragment="user.example.com.mymediaplayertest.app_prefs.list_file_ext_pref_frag"
+            />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="@string/pref_key_list_recognize_nomedia"

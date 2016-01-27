@@ -3,6 +3,7 @@ package user.example.com.mymediaplayertest.app_prefs;
 import android.app.ActionBar;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -33,7 +34,6 @@ public class AppPerferenceActivity extends PreferenceActivity {
                 break;
             }
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

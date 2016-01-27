@@ -1,5 +1,6 @@
 package user.example.com.mymediaplayertest.app_prefs;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
@@ -13,5 +14,9 @@ public class list_pref_frag extends PreferenceFragment{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.list_preferences);
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setDisplayUseLogoEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
+
 }
