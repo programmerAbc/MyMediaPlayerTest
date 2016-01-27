@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="@string/pref_cat_appearance">
-        <ListPreference
+        <user.example.com.mymediaplayertest.app_prefs.list_pref_theme_dialog
             android:defaultValue="1"
             android:dialogTitle="@string/pref_appearance_theme"
             android:entries="@array/list_theme_entries"
@@ -39,7 +39,9 @@
             android:key="@string/pref_key_list_folders"
             android:persistent="false"
             android:summary="@string/pref_scan_folders_summary"
-            android:title="@string/pref_scan_folders" />
+            android:title="@string/pref_scan_folders"
+            android:fragment="user.example.com.mymediaplayertest.app_prefs.audio_pref_frag"
+            />
         <Preference
             android:key="@string/pref_key_list_file_extensions"
             android:persistent="false"

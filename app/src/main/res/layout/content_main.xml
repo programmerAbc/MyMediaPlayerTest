@@ -11,5 +11,5 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="user.example.com.mymediaplayertest.MainActivity"
     tools:showIn="@layout/activity_main">
-
+   
 </RelativeLayout>

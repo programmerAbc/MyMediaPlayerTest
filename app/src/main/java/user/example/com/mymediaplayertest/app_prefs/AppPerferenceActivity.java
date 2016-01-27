@@ -15,23 +15,23 @@ public class AppPerferenceActivity extends PreferenceActivity {
     @Override
     public void onBuildHeaders(List<Header> target) {
         super.onBuildHeaders(target);
-        ActionBar actionBar=getActionBar();
+        ActionBar actionBar = getActionBar();
         actionBar.setDisplayUseLogoEnabled(false);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        loadHeadersFromResource(R.xml.preference_header,target);
+        loadHeadersFromResource(R.xml.preference_header, target);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()){
-            case android.R.id.home:{
+        switch (item.getItemId()) {
+            case android.R.id.home: {
                 this.setResult(RESULT_OK);
                 this.finish();
                 break;
             }
-                default: {
-                    break;
-                }
+            default: {
+                break;
+            }
         }
 
         return super.onOptionsItemSelected(item);

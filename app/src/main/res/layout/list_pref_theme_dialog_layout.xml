@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="2"
+    app:rowCount="4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/pref_appearance_theme"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingLeft="@dimen/default_gap"
+        app:layout_columnSpan="2" />
+
+    <ImageButton
+        android:id="@+id/pref_list_theme0"
+        android:layout_width="0dp"
+        app:layout_columnWeight="1"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_placeholder" />
+
+    <ImageButton
+        android:id="@+id/pref_list_theme1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_placeholder" />
+
+    <ImageButton
+        android:id="@+id/pref_list_theme2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_placeholder" />
+
+    <ImageButton
+        android:id="@+id/pref_list_theme3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_placeholder" />
+
+    <CheckBox
+        android:id="@+id/pref_list_display_in_italics"
+        android:checked="false"
+        android:text="@string/pref_list_theme_display_in_italics"
+        app:layout_columnSpan="2" />
+</android.support.v7.widget.GridLayout>
+
